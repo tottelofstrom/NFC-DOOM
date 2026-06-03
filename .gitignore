@@ -27,3 +27,6 @@ local.properties
 # OS files
 .DS_Store
 Thumbs.db
+
+# Blog post lives on the website (One.com), not in the code repo
+index.html
