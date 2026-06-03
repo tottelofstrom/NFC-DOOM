@@ -19,12 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----------------------------------------------------------------------------
-Third-party content
-
-The first-person graphics under app/src/main/assets/doomgfx/ are derived from
-FREEDOOM (https://freedoom.github.io/) and remain under Freedoom's own BSD
-3-Clause licence. See app/src/main/assets/doomgfx/FREEDOOM-COPYING.txt and
-ATTRIBUTION.txt. The MIT licence above applies to this project's own source
-code, not to those bundled assets.

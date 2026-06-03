@@ -235,8 +235,10 @@ health/ammo/key pickups help.
 
 ## License / content
 
-This project implements an original Doom‑like engine. The bundled first‑person art is
-from **Freedoom**, used under its BSD licence (see the files under
+The project's own source code is released under the **MIT licence** — see
+[`LICENSE`](LICENSE); do whatever you like with it. The engine is an original
+Doom‑like raycaster, and the bundled first‑person art is from **Freedoom**, used
+under its BSD licence (see the files under
 `app/src/main/assets/doomgfx/`). It does **not** include or redistribute id Software's
 copyrighted Doom data or the trademarked DOOM logo. "Doom" is referenced only
 descriptively; this is a Doom‑*like* project, not Doom.
