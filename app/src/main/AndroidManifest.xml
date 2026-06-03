@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ImplantDoom manifest.
+
+  Permissions:
+    * NFC only. There is NO android.permission.INTERNET entry anywhere in this
+      project; the app never touches the network.
+
+  NFC intent filters route three discovery actions to MainActivity:
+    * NDEF_DISCOVERED scoped to our custom MIME type so that tapping a written
+      implant launches the app straight into the cartridge.
+    * TECH_DISCOVERED (Ndef / NfcV / NdefFormatable) for diagnostics + writing.
+    * TAG_DISCOVERED as a final fallback for bare tags.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.NFC" />
+
+    <!-- NFC is not required: the app still installs (and runs the built-in demo
+         cartridge) on devices/emulators without NFC hardware. -->
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ImplantDoom">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.ImplantDoom">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Auto-launch when our custom cartridge MIME record is discovered. -->
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/vnd.implantdoom.cartridge" />
+            </intent-filter>
+
+            <!-- Tech discovery for NfcV implants, NDEF reads and writing. -->
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+
+            <!-- Final fallback for any other tag. -->
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

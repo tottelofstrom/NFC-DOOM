@@ -1,0 +1,8 @@
+﻿Doom-style graphics in this folder were extracted from FREEDOOM
+(https://freedoom.github.io/), the free (BSD-licensed) game data project.
+
+They are NOT id Software's copyrighted Doom assets. Freedoom provides original,
+freely licensed replacement art that is compatible with the Doom engine.
+
+See FREEDOOM-COPYING.txt for the BSD license and FREEDOOM-CREDITS.txt for the
+list of contributors. Freedoom version 0.13.0.

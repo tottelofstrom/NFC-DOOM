@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Tech-list filter for ACTION_TECH_DISCOVERED. Each <tech-list> is matched as an
+  AND set; multiple <tech-list> elements are OR-ed together. We accept any tag
+  that exposes Ndef (readable cartridge), NfcV (ISO 15693 / Type 5 implant, for
+  diagnostics) or NdefFormatable (blank tag we can format + write).
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <tech-list>
+        <tech>android.nfc.tech.Ndef</tech>
+    </tech-list>
+    <tech-list>
+        <tech>android.nfc.tech.NfcV</tech>
+    </tech-list>
+    <tech-list>
+        <tech>android.nfc.tech.NdefFormatable</tech>
+    </tech-list>
+</resources>

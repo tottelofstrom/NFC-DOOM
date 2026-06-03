@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Original placeholder launcher art (NOT derived from any copyrighted game asset):
+  a stylised green NFC "chip" square with a contact grid and a small play arrow,
+  representing "a cartridge you scan to play". Drawn on the 108x108dp adaptive
+  icon canvas; artwork is kept within the central 72x72 safe zone.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Chip body -->
+    <path
+        android:fillColor="#1FAE3D"
+        android:pathData="M34,34 h40 a4,4 0 0 1 4,4 v32 a4,4 0 0 1 -4,4 h-40 a4,4 0 0 1 -4,-4 v-32 a4,4 0 0 1 4,-4 z" />
+    <!-- Inner die -->
+    <path
+        android:fillColor="#0B0E0B"
+        android:pathData="M40,40 h28 a3,3 0 0 1 3,3 v22 a3,3 0 0 1 -3,3 h-28 a3,3 0 0 1 -3,-3 v-22 a3,3 0 0 1 3,-3 z" />
+    <!-- Contact pins (top) -->
+    <path android:fillColor="#7CFFA0" android:pathData="M44,30 h4 v6 h-4 z" />
+    <path android:fillColor="#7CFFA0" android:pathData="M52,30 h4 v6 h-4 z" />
+    <path android:fillColor="#7CFFA0" android:pathData="M60,30 h4 v6 h-4 z" />
+    <!-- Contact pins (bottom) -->
+    <path android:fillColor="#7CFFA0" android:pathData="M44,72 h4 v6 h-4 z" />
+    <path android:fillColor="#7CFFA0" android:pathData="M52,72 h4 v6 h-4 z" />
+    <path android:fillColor="#7CFFA0" android:pathData="M60,72 h4 v6 h-4 z" />
+    <!-- Play arrow on the die -->
+    <path android:fillColor="#7CFFA0" android:pathData="M49,46 L63,54 L49,62 z" />
+</vector>
