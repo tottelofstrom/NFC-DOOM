@@ -31,8 +31,7 @@ raycaster; the implant is used **only as passive cartridge storage**.
   sprites, textures, music, sound effects or maps, and not the trademarked DOOM logo.
   The first‑person artwork is from **Freedoom** — a free, BSD‑licensed Doom‑compatible
   art set (attribution in `app/src/main/assets/doomgfx/`), decoded into PNGs by a small
-  WAD parser written for this project. The engine is an original Doom‑like raycaster. A
-  future version may also let you import your own legally obtained WAD locally.
+  WAD parser written for this project. The engine is an original Doom‑like raycaster.
 * It does **not** use Dsruptive's app, APIs, servers, SDKs or cloud.
 * It does **not** request the `INTERNET` permission.
 
