@@ -28,6 +28,8 @@ local.properties
 .DS_Store
 Thumbs.db
 
-# Blog / social assets live on the website (One.com) and X, not in the code repo
+# Blog / social assets (X clip, raw social image) — kept local, not in the repo.
+# The optimized in-hand photo used by the README lives under screenshots/.
 index.html
 NFC-DOOM.mp4
+NFC-DOOM-image.png

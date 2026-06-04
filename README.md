@@ -71,6 +71,10 @@ read: recovered 248 NDEF bytes  // cartridge loaded from the chip
 
 And the payoff: now you can **close the app, tap the implant from the home screen, and Android boots you straight into the level** — in landscape, no menus. Chip in chest → Doom.
 
+![Playing NFC-DOOM in hand — the level came off a chip in my chest](screenshots/in-hand.jpg)
+
+*The real thing, in hand — no emulator, no screenshot trickery. The level you're walking through came off a chip in my chest.*
+
 ## 05 · Tech stack
 
 `Kotlin` · `Jetpack Compose` · `Custom DDA raycaster` · `Android NFC (Reader Mode)` · `ISO 15693 / NFC-V` · `Freedoom (BSD) art` · `Custom WAD parser` · `No network permission`
