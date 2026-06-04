@@ -28,5 +28,6 @@ local.properties
 .DS_Store
 Thumbs.db
 
-# Blog post lives on the website (One.com), not in the code repo
+# Blog / social assets live on the website (One.com) and X, not in the code repo
 index.html
+NFC-DOOM.mp4
